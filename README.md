@@ -46,23 +46,35 @@ Load sample_data.sql → Execute to insert test data.
 Verify by running:
 
 sql
+
 USE StudentRecordsDB;
+
 SELECT * FROM Programs;
+
 🧪 Example Queries
 sql
 -- List all programs with their department names
+
 SELECT p.program_code, p.name AS program_name, d.name AS department_name
+
 FROM Programs p
+
 JOIN Departments d ON p.department_id = d.department_id;
 
 -- Show students with their enrolled programs
+
 SELECT s.student_number, s.first_name, s.last_name, p.name AS program_name
+
 FROM Students s
+
 LEFT JOIN Programs p ON s.program_id = p.program_id;
 
 -- Count enrollments per course section
+
 SELECT section_id, COUNT(*) AS total_enrolled
+
 FROM Enrollments
+
 GROUP BY section_id;
 
 📌 Notes
