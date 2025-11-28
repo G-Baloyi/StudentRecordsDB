@@ -31,7 +31,9 @@ StudentRecordsDB_Assignment/
 
 │
 ├── StudentRecordsDB.sql   # Schema: CREATE DATABASE + tables + indexes
+
 ├── sample_data.sql        # Sample INSERT statements for testing
+
 └── README.md              # Documentation
 
 🚀 How to Run
