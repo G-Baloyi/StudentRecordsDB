@@ -28,10 +28,12 @@ SystemUsers: Provides authentication and role management for students and instru
 📂 File Structure
 Code
 StudentRecordsDB_Assignment/
+
 │
 ├── StudentRecordsDB.sql   # Schema: CREATE DATABASE + tables + indexes
 ├── sample_data.sql        # Sample INSERT statements for testing
 └── README.md              # Documentation
+
 🚀 How to Run
 Open SQL Server Management Studio (SSMS).
 
@@ -60,7 +62,9 @@ LEFT JOIN Programs p ON s.program_id = p.program_id;
 SELECT section_id, COUNT(*) AS total_enrolled
 FROM Enrollments
 GROUP BY section_id;
+
 📌 Notes
+
 Designed for SQL Server 2019+.
 
 Uses constraints, foreign keys, and indexes for integrity and performance.
