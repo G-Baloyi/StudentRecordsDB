@@ -5,7 +5,7 @@ StudentRecordsDB is a SQL Server database project designed to manage student, pr
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 🛠 Features
-- **[Departments]**: Stores department codes, names, and descriptions.  
+- **[Departments]**: Stores department codes, names, and descriptions. 
 - **[Programs]**: Links academic programs to departments with degree levels and durations.  
 - **[Students]**: Captures student details, enrollment year, and program associations.  
 - **[Instructors]**: Manages faculty records tied to departments.  
